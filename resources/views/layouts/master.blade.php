@@ -34,6 +34,7 @@
             justify-content: center;
         }
 
+
         .position-ref {
             position: relative;
         }
@@ -73,7 +74,7 @@
     <nav class="navbar is-dark">
         <div class="navbar-brand">
             <a class="navbar-item" href="{{ route('welcome') }}">
-                BootCamp
+                Formation
             </a>
             <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
                 <span></span>
@@ -91,25 +92,26 @@
                     Contact
                 </a>
                 <a class="navbar-item" href="{{ route('produits') }}">
-                    Produits
+                     Produits
+                </a>
+                <a class="navbar-item" href="{{ route('moncompte') }}">
+                   <i class="fa fa-user" aria-hidden="true"></i> Mon Compte
                 </a>
             </div>
     </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3 text-center">Hello World</h1>
+        </div>
+    </div>
     @yield('contenu_site')
 
 </body>
 <footer>
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron">
         <div class="container">
-            <h1 class="display-3">Fluid jumbo heading</h1>
-            <p class="lead">Jumbo helper text</p>
-            <hr class="my-2">
-            <p>More info</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-            </p>
+            <p class="text-center">Copyright 2020 - Formation</p>
         </div>
     </div>
 </footer>
-
 </html>

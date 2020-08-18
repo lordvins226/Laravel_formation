@@ -14,17 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.front-office.welcome');
 })->name("welcome");
 
 Route::get('/accueil', function () {
-    return view('accueil');
+    return view('pages.front-office.accueil');
 })->name("accueil");
 
 Route::get('/contact', function () {
-    return view('contact');
+    return view('pages.front-office.contact');
 })->name("contact");
 
 Route::get('/produits', function () {
-    return view('produits');
+    return view('pages.front-office.produits');
 })->name("produits");
+
+Route::get('/moncompte', function () {
+    return view('pages.front-office.moncompte');
+})->name("moncompte");

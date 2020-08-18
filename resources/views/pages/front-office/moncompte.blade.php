@@ -3,7 +3,7 @@
 @section('contenu_site')
 <div class="content">
     <div class="title m-b-md">
-        Welcome
+        Mon Compte
     </div>
 </div>
 @endsection

@@ -4,11 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Produit;
+
 class ProduitController extends Controller
 {
     public function afficherPageProduit(){
         $titreController = "Catalogue titre";
-        return view('pages.front-office.produits', compact('titreController'));
+
+        $les_produit = Produit::paginate(10);
+
+        return view('pages.front-office.produits', compact('titreController','les_produit'));
     }
     public function afficherPageAccueil(){
         $titreController = "Accueil";

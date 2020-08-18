@@ -1,3 +1,7 @@
+@php
+    $titre = "Contact"
+@endphp
+
 @extends('layouts.master')
    @section('contenu_site')
    <section class="hero is-fullheight">

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>BootCamp</title>
+    <title>{{$titre}}</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -101,7 +101,7 @@
     </nav>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-3 text-center">Hello World</h1>
+        <h1 class="display-3 text-center">{{$titre}}</h1>
         </div>
     </div>
     @yield('contenu_site')

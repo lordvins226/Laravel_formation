@@ -13,22 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.front-office.welcome');
-})->name("welcome");
+Route::get('/', 'ProduitController@afficherPageWelcome')->name("welcome");
 
-Route::get('/accueil', function () {
-    return view('pages.front-office.accueil');
-})->name("accueil");
+Route::get('/accueil', 'ProduitController@afficherPageAccueil')->name("accueil");
 
-Route::get('/contact', function () {
-    return view('pages.front-office.contact');
-})->name("contact");
+Route::get('/contact', 'ProduitController@afficherPageContact')->name("contact");
 
-Route::get('/produits', function () {
-    return view('pages.front-office.produits');
-})->name("produits");
+Route::get('/produits','ProduitController@afficherPageProduit')->name("produits");
 
-Route::get('/moncompte', function () {
-    return view('pages.front-office.moncompte');
-})->name("moncompte");
+Route::get('/moncompte', 'ProduitController@afficherPageCompte')->name("moncompte");

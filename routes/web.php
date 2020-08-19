@@ -19,6 +19,12 @@ Route::get('/accueil', 'ProduitController@afficherPageAccueil')->name("accueil")
 
 Route::get('/contact', 'ProduitController@afficherPageContact')->name("contact");
 
-Route::get('/produits','ProduitController@afficherPageProduit')->name("produits");
+Route::get('/produits', 'ProduitController@afficherPageProduit')->name("produits");
 
 Route::get('/moncompte', 'ProduitController@afficherPageCompte')->name("moncompte");
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/nouveau_livre', 'LivreController@afficheFormulaire')->name("livres.ajout");
+Route::post('/nouveau_livre', 'LivreController@ajouterLivre')->name("livres.ajout");
